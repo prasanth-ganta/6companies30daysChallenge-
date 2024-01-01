@@ -31,11 +31,11 @@ class Solution {
         for(String name:map.keySet()){
             ArrayList<Integer>list=map.get(name);
             Collections.sort(list);
-            we are checking because we want 3 Consecutive times for name to be highAccess
+            //we are checking because we want 3 Consecutive times for name to be highAccess
             if(list.size()>=3){
                for(int i=0;i<list.size()-2;i++){
                    if(list.get(i+2)-list.get(i)<100){
-                       high.add(name); //if get the name no need to check further break it
+                       high.add(name); //if we got the name no need to check further break it
                        break;
                    }
                }
